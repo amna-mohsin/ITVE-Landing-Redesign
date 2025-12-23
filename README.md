@@ -353,9 +353,8 @@ Personal project. Feel free to open issues/PRs if you spot bugs or want to impro
 
 ## 📞 Contact
 
-- **Email:** info@itve.edu
-- **Phone:** +1 (234) 567-890
-- **Address:** 123 Education Street, Tech City, TC 12345
+- **Email:** mohsinamna279@gmail.com
+- **Linkedin:**   [Link to Linkedin](https://www.linkedin.com/in/amna-m98/)
 
 ---
 
