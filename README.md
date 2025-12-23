@@ -10,7 +10,6 @@ A modern, responsive redesign of the ITVE (Institute of Technical & Vocational E
 ---
 
 - [Project Overview](#-project-overview)
-- [Tech Stack](#-tech-stack)
 - [Design Decisions](#-design-decisions)
 - [Installation & Setup](#-installation--setup)
 - [Project Structure](#-project-structure)
