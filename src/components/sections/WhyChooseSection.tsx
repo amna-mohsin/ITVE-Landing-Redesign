@@ -1,11 +1,11 @@
-import { CheckCircle, BookOpen, Users, Award, Briefcase, Globe } from 'lucide-react'
+import { BookOpen, Users, Award, Briefcase } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const features = [
   {
     icon: BookOpen,
     title: 'Industry-Aligned Curriculum',
-    description: 'Our courses are designed in collaboration with industry leaders to ensure relevance.',
+    description: 'Our courses are designed to match real industry requirements and practices.',
   },
   {
     icon: Users,
@@ -14,27 +14,21 @@ const features = [
   },
   {
     icon: Award,
-    title: 'Certified Programs',
-    description: 'Receive recognized certifications that enhance your career prospects.',
+    title: 'Employment-Focused Training',
+    description: 'Every program is designed with job placement and career growth in mind.',
   },
   {
     icon: Briefcase,
     title: 'Career Support',
     description: 'Get assistance with job placement, resume building, and interview preparation.',
   },
-  {
-    icon: Globe,
-    title: 'Global Recognition',
-    description: 'Our qualifications are recognized by employers worldwide.',
-  },
-  {
-    icon: CheckCircle,
-    title: 'Hands-On Learning',
-    description: 'Practical projects and workshops ensure you gain real-world skills.',
-  },
 ]
 
 export default function WhyChooseSection() {
+  const whatsappNumber = "923363666609";
+  const message = encodeURIComponent("Hello! I am interested in enrolling at ITVE. Could you please provide details on the admission process and the next steps?");
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+
   return (
     <section id="why-choose" className="snap-section relative overflow-hidden py-20">
       {/* Background Elements */}
@@ -51,7 +45,7 @@ export default function WhyChooseSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {features.map((feature, index) => {
             const Icon = feature.icon
             return (
@@ -79,17 +73,22 @@ export default function WhyChooseSection() {
         {/* Additional CTA */}
         <div className="mt-16 text-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <div className="glass-strong p-8 rounded-2xl max-w-3xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Ready to Start Your Journey?</h3>
+            <h3 className="text-2xl font-bold mb-4">Ready to Build Real Skills?</h3>
             <p className="text-white/80 mb-6">
-              Join thousands of successful graduates who have transformed their careers with ITVE.
+              Start your journey toward employment with ITVE today.
             </p>
-            <button className="px-8 py-4 bg-primary text-background font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:glow-primary">
+            {/* Updated Apply Now WhatsApp Link */}
+            <a 
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-8 py-4 bg-primary text-background font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:glow-primary"
+            >
               Apply Now
-            </button>
+            </a>
           </div>
         </div>
       </div>
     </section>
   )
 }
-

@@ -1,6 +1,10 @@
-import { Mail, Phone, MapPin, Send, ArrowRight } from 'lucide-react'
+import { Mail, Phone, Send, ArrowRight } from 'lucide-react'
 
 export default function CTASection() {
+  const whatsappNumber = "923363666609";
+  const message = encodeURIComponent("Hello! I am interested in enrolling at ITVE. Could you please provide details on the admission process and the next steps?");
+  const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+
   return (
     <section id="cta" className="snap-section relative overflow-hidden py-20 flex items-center">
       {/* Background Gradient */}
@@ -15,13 +19,13 @@ export default function CTASection() {
           {/* Left: Contact Form */}
           <div className="animate-fade-in-up">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Get in <span className="text-gradient">Touch</span>
+              Start Your <span className="text-gradient">Skill Journey</span>
             </h2>
             <p className="text-white/80 text-lg mb-8">
-              Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+              Build Real Skills. Get Real Opportunities.
             </p>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
               <div>
                 <input
                   type="text"
@@ -62,8 +66,12 @@ export default function CTASection() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2 text-white">Email Us</h3>
-                  <a href="mailto:info@itve.edu" className="text-white/70 hover:text-primary transition-colors">
-                    info@itve.edu
+                  {/* Updated Email Link */}
+                  <a 
+                    href="mailto:headoffice.itve@gmail.com" 
+                    className="text-white/70 hover:text-primary transition-colors"
+                  >
+                    headoffice.itve@gmail.com
                   </a>
                 </div>
               </div>
@@ -76,38 +84,34 @@ export default function CTASection() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2 text-white">Call Us</h3>
-                  <a href="tel:+1234567890" className="text-white/70 hover:text-primary transition-colors">
-                    +1 (234) 567-890
+                  {/* Updated WhatsApp/Phone Link */}
+                  <a 
+                    href={whatsappUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-white/70 hover:text-primary transition-colors"
+                  >
+                    +92 336 3666609
                   </a>
                 </div>
               </div>
             </div>
 
-            <div className="glass p-6 rounded-xl hover:scale-105 transition-all duration-300 hover:glow-primary">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-primary/20 rounded-lg">
-                  <MapPin className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2 text-white">Visit Us</h3>
-                  <p className="text-white/70">
-                    123 Education Street<br />
-                    Tech City, TC 12345
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Quick Action */}
+            {/* Quick Action - Linked to WhatsApp */}
             <div className="glass-strong p-6 rounded-xl mt-8">
               <h3 className="font-semibold mb-4 text-white">Ready to Apply?</h3>
               <p className="text-white/70 mb-4 text-sm">
                 Start your application process today and take the first step towards your future.
               </p>
-              <button className="group w-full px-6 py-3 bg-accent text-background font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:glow-accent flex items-center justify-center gap-2">
+              <a 
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group w-full px-6 py-3 bg-accent text-background font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:glow-accent flex items-center justify-center gap-2"
+              >
                 Apply Now
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -115,4 +119,3 @@ export default function CTASection() {
     </section>
   )
 }
-

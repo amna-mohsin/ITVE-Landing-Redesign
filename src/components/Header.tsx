@@ -18,7 +18,7 @@ export default function Header() {
     { label: 'Home', href: '#hero' },
     { label: 'About', href: '#about' },
     { label: 'Programs', href: '#programs' },
-    { label: 'Student Portal', href: '#portal' },
+    { label: 'Student Portal', href: '/student-portal' },
     { label: 'Why Choose Us', href: '#why-choose' },
     { label: 'Contact', href: '#cta' },
   ]

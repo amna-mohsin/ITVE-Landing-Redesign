@@ -2,10 +2,10 @@ import { Target, Users, Award, TrendingUp } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const stats = [
-  { icon: Users, value: '10,000+', label: 'Students Enrolled' },
-  { icon: Award, value: '95%', label: 'Success Rate' },
-  { icon: TrendingUp, value: '500+', label: 'Industry Partners' },
-  { icon: Target, value: '50+', label: 'Programs Offered' },
+  { icon: Users, value: 'Founded', label: '2013' },
+  { icon: Award, value: '500+', label: 'Student Alumni' },
+  { icon: TrendingUp, value: '13', label: 'Years of Experience' },
+  { icon: Target, value: 'Affordable', label: 'Job-Oriented Education' },
 ]
 
 export default function AboutSection() {
@@ -19,25 +19,14 @@ export default function AboutSection() {
               About <span className="text-gradient">ITVE</span>
             </h2>
             <p className="text-white/80 text-lg mb-6 leading-relaxed">
-              The Institutes of Technical & Vocational Education (ITVE) is a premier institution
-              dedicated to providing world-class technical and vocational training. We bridge the gap
-              between education and industry, ensuring our students are job-ready from day one.
+              ITVE is a modern technical and vocational training institute focused on delivering affordable, job-oriented education.
+            </p>
+            <p className="text-white/80 text-lg mb-6 leading-relaxed">
+              Our mission is to bridge the gap between education and employment by providing practical, market-driven skills that lead to real career opportunities.
             </p>
             <p className="text-white/80 text-lg mb-8 leading-relaxed">
-              With state-of-the-art facilities, experienced instructors, and industry-aligned curricula,
-              we prepare students for successful careers in various technical fields.
+              We believe quality education should be accessible, affordable, and aligned with industry needs, enabling students to become financially independent through skills.
             </p>
-            
-            <div className="flex flex-wrap gap-4">
-              <div className="glass px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-primary">20+</div>
-                <div className="text-sm text-white/70">Years of Excellence</div>
-              </div>
-              <div className="glass px-6 py-3 rounded-lg">
-                <div className="text-2xl font-bold text-accent">15+</div>
-                <div className="text-sm text-white/70">Countries Served</div>
-              </div>
-            </div>
           </div>
 
           {/* Right Stats Grid */}

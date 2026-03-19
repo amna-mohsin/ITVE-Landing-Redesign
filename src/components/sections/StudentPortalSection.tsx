@@ -3,33 +3,33 @@ import { ShieldCheck, Clock, CalendarCheck, Laptop, Bell, FileText, LogIn } from
 const portalFeatures = [
   {
     icon: ShieldCheck,
-    title: 'Single Sign-On',
-    description: 'Secure access to courses, grades, and resources with multi-factor support.',
+    title: 'Secure Access',
+    description: 'Secure login with multi-factor authentication support.',
   },
   {
     icon: CalendarCheck,
     title: 'Schedule & Attendance',
-    description: 'Real-time timetable, attendance tracking, and automated reminders.',
+    description: 'Real-time timetable and attendance tracking.',
   },
   {
     icon: Laptop,
-    title: 'Course Workspace',
-    description: 'Assignments, labs, and submissions organized by program and semester.',
+    title: 'Course Materials',
+    description: 'Access assignments, labs, and course resources anytime.',
   },
   {
     icon: Bell,
     title: 'Notifications',
-    description: 'Instant alerts for deadlines, exam windows, and instructor updates.',
+    description: 'Instant alerts for deadlines and important updates.',
   },
   {
     icon: FileText,
-    title: 'Transcripts & Letters',
-    description: 'One-click requests for transcripts, certificates, and enrollment letters.',
+    title: 'Progress Tracking',
+    description: 'Monitor your learning progress and achievements.',
   },
   {
     icon: Clock,
-    title: '24/7 Availability',
-    description: 'Cloud-hosted, mobile-friendly access anytime, anywhere.',
+    title: '24/7 Access',
+    description: 'Cloud-hosted, mobile-friendly platform available anytime.',
   },
 ]
 
@@ -48,26 +48,53 @@ export default function StudentPortalSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 animate-fade-in-up">
             <p className="uppercase tracking-[0.3em] text-white/60 text-sm">
-              Student Experience
+              Learning Platform
             </p>
             <h2 className="text-4xl md:text-5xl font-bold leading-tight">
-              Centralized <span className="text-gradient">Student Portal</span>
+              ITVE <span className="text-gradient">Student Platform</span>
             </h2>
             <p className="text-white/80 text-lg leading-relaxed">
-              A modern, industry-grade portal for students to manage courses, schedules, submissions,
-              and records. Designed for speed, security, and clarity on every device.
+              A centralized digital platform designed to manage learning, communication, and progress.
             </p>
+            <div className="space-y-3">
+              <p className="text-white/70 text-base">Features include:</p>
+              <ul className="space-y-2 text-white/70 text-base">
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Course access & materials</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Attendance & scheduling</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Student-teacher communication</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Progress tracking</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-primary font-bold mt-1">•</span>
+                  <span>Community interaction</span>
+                </li>
+              </ul>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a
-                href="#portal"
+                href="/student-portal"
                 className="group px-8 py-4 bg-primary text-background font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:glow-primary flex items-center gap-2 w-full sm:w-auto justify-center"
               >
                 Open Portal
                 <LogIn className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
-              <button className="group glass px-8 py-4 text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-white/10 flex items-center gap-2 w-full sm:w-auto justify-center">
+              <a
+                href="/student-portal"
+                className="group px-8 py-4 glass text-white font-semibold rounded-lg transition-all duration-300 hover:scale-105 hover:bg-white/10 flex items-center gap-2 w-full sm:w-auto justify-center"
+              >
                 Student Login
-              </button>
+              </a>
             </div>
           </div>
 
