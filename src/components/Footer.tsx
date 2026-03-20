@@ -43,12 +43,14 @@ export default function Footer() {
               {/* Updated Email Link */}
               <li className="flex items-center gap-2">
                 <Mail size={16} className="text-primary" />
-                <a 
-                  href="mailto:headoffice.itve@gmail.com" 
-                  className="hover:text-primary transition-colors"
-                >
-                  headoffice.itve@gmail.com
-                </a>
+                             <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=headoffice.itve@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/70 hover:text-primary transition-colors"
+                  >
+                    headoffice.itve@gmail.com
+                  </a>
               </li>
               {/* Updated WhatsApp Link */}
               <li className="flex items-center gap-2">
