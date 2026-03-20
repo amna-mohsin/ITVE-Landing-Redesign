@@ -9,7 +9,7 @@ export default function CTASection() {
     <section id="cta" className="snap-section relative overflow-hidden py-20 flex items-center">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-background to-accent/20" />
-      
+
       {/* Animated Orbs */}
       <div className="absolute top-10 right-10 w-64 h-64 bg-primary/20 rounded-full blur-3xl animate-float" />
       <div className="absolute bottom-10 left-10 w-64 h-64 bg-accent/20 rounded-full blur-3xl animate-float-delayed" />
@@ -66,13 +66,14 @@ export default function CTASection() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2 text-white">Email Us</h3>
-                  {/* Updated Email Link */}
-                  <a 
-                    href="mailto:headoffice.itve@gmail.com" 
-                    className="text-white/70 hover:text-primary transition-colors"
-                  >
-                    headoffice.itve@gmail.com
-                  </a>
+                <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=headoffice.itve@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="text-white/70 hover:text-primary transition-colors"
+>
+  headoffice.itve@gmail.com
+</a>
                 </div>
               </div>
             </div>
@@ -85,10 +86,10 @@ export default function CTASection() {
                 <div>
                   <h3 className="font-semibold mb-2 text-white">Call Us</h3>
                   {/* Updated WhatsApp/Phone Link */}
-                  <a 
-                    href={whatsappUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer" 
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white/70 hover:text-primary transition-colors"
                   >
                     +92 336 3666609
@@ -103,7 +104,7 @@ export default function CTASection() {
               <p className="text-white/70 mb-4 text-sm">
                 Start your application process today and take the first step towards your future.
               </p>
-              <a 
+              <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
