@@ -66,14 +66,14 @@ export default function CTASection() {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2 text-white">Email Us</h3>
-                <a
-  href="https://mail.google.com/mail/?view=cm&fs=1&to==headoffice.itve@gmail.com"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="text-white/70 hover:text-primary transition-colors"
->
-  headoffice.itve@gmail.com
-</a>
+    <a
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to= headoffice.itve@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/70 hover:text-primary transition-colors"
+                  >
+                     headoffice.itve@gmail.com
+                  </a>
                 </div>
               </div>
             </div>
